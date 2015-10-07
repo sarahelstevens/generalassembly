@@ -1,0 +1,51 @@
+body{
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h1{
+	background: red;
+	margin: 15px;
+	border: 2px solid black;
+	padding:15px;
+}
+
+h2{
+	background: black;
+	color: white;
+	margin: 15px;
+	padding: 15px 15px;
+}
+
+ol{ 
+	line-height: 1.5;
+	background: yellow;
+	margin: 15px;
+	border: 3px solid black;
+	padding: 15px;
+}
+
+li{
+	margin: 15px;
+	padding: 15px;	
+}
+
+code{
+	background: white;
+	color: black;
+	margin:  0px;
+	border: 1px solid black;
+	padding: 5px;
+
+}
+
+p{
+	background: blue;
+	color: white;
+	margin: 15px;
+	border: 3px solid black;
+	padding: 15px;
+}
+
+.extra-line-height{line-height: 2;}
+

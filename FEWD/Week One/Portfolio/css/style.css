@@ -17,7 +17,6 @@ h1{
 	font-size: 40px;
 	color: #05080c;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	text-align: center;
 	margin-top: 0px;
 }
@@ -89,6 +88,18 @@ section{
 .time{
 	font-size: 14px;
 	display: inline;
+}
+
+#header{
+	position: fixed;
+	height: 35px;
+	top: 0px; 
+	left: 30px; 
+	right: 30px;  
+	margin: 0px;
+	padding: 0px;
+	background-color: #f6f6f6;
+	border-bottom: 5px solid #222;
 }
 
 #content-wrap{

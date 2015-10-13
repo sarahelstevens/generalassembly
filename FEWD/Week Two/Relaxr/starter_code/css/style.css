@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr
+Client: Relaxr
+Author: Sarah Stevens
+Developer @GA in Melbourne
 */
 
 
@@ -44,7 +44,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     background-size: contain;
 }
 
 
@@ -55,21 +55,24 @@ body {
 /* Center the container */
 #container {
   width: 100%;
-  margin: auto;
-  height: 500px;
-
+  margin: 0px auto;
 }
 
 header {
-        background-color: 
+  height: 600px;
+  margin-bottom: 0px;
 }
 
 section{
-        background-color: #f0efef
+
+  padding: 50px 0px;
 }
 
 
 footer {
+  background-color: #121212;
+  margin-bottom: 0px;
+  padding: 0px 0px 40px 0px;
 
 }
 
@@ -78,64 +81,114 @@ footer {
 /*******************************************/
 
 h1{
-    font-size: 24px;
-    font-weight: 800;
-    color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 h2{
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  color: #033048;
+  margin: 40px 60px;
 }
 
-h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: #033048;
-}
-
-h5{
-    font-size: 9px;
-    font-weight: 600;
-    color: #fff;
+h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
 }
 
 
 a{
-    font-size: 14px;
-    font-weight: 800;
-    margin: 10, 20;
-    background-color: #f9e42e;
-    border-radius: 5px; 
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 300px; 
 }
 
 p{
-  font-size: 13px;
-  font-weight: 300;  
-  color: #606161;
+ font-size: 26px;
+ font-weight: 300;  
+ color: #606161;
+ width: 620px;
 }
 
 ul{
-    font-size: 13px;
-    font-weight: 300;  
-    color: #606161;
+  font-size: 26px;
+  font-weight: 300;  
+  color: #606161;
+  width: 500px;
+  margin: 50px 0px 0px 50px;
 }
 
 blockquote{
-    font-size: 18px;
-    font-weight: 300;  
-    font-style: italic;
-    color: #fff;
-    background-color: #033048;
+  font-size: 36px;
+  font-weight: 300;  
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  width: 600px;
 }
 
 em{
-    font-size: 18px;
-    font-weight: 600;
-    font-style: normal;  
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;  
+  text-align: center;
 }
 
-footer{
-  background-color: #121212;
+img{
+  margin: 60px 50px;
+  display: block;
 }
+
+.yellow-button{
+    color: #033048;
+    margin: 0px auto;
+    padding: 10px 20px;
+    background-color: #f9e42e;
+    display: block;
+}
+
+.blue-button{
+    color: #fff;
+    margin: 0px auto;
+    padding: 10px 20px;
+    background-color: #033048;
+    color: #fff;
+    display: block;
+}
+
+.grey-background{
+  background-color: #f0efef;
+}
+
+.yellow-background{
+  background-color: #f9e42e;
+  padding: 30px 0px;
+}
+
+.blue-background{
+    background: url(../images/testimonial_bg.jpg) no-repeat center center;
+    display: block;
+}
+
+.footer-logo{
+    margin: 0px auto;
+    display: block;
+    padding: 60px 0px;
+}
+
+.social{
+    margin: 0px auto;
+    padding: 60px 20px;
+    width: 100px;
+    display: inline-block;  
+  }
+

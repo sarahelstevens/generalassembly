@@ -1,0 +1,81 @@
+Startup Matchmaker Design File
+------------------------------
+
+
+Page setup:
+----------
+
+Use box model fix
+Anchor footer at bottom
+Maximum page width - 1280px
+
+
+Colors:
+-------
+
+black
+white
+yellow
+#C6C6C6 (light grey)
+
+Page navigation = yellow on hover (Bonus: Active navigation item background #666)
+
+Tagline:
+- top border #AAA(dark grey)
+- deleted text #999 (medium grey)
+
+Banner and Banner text container: box shadow, blur 5px, black 75% opacity
+
+Button: inset box shadow, vertical offset -3px, black 20% opacity
+
+Tout container: inset box shadow, horizontally offset -1px, black 15% opacity
+
+
+Fonts(Google Fonts):
+--------------------
+
+Source Sans Pro (400, 700)
+Oswald (700)
+Merriweather (700, 700italic)
+
+--
+
+Body text - Source Sans Pro, 20px
+
+Button text - Oswald
+
+--
+
+Startup Matchmaker (Merriweather, 30px)
+
+Developers Designers (Oswald, uppercase) How it Works Our Team Blog (25px)
+
+Because two brains taste are better than one. (Merriweather, 25px)
+
+---
+
+Meet your Match! (Source Sans Pro, 30px)
+
+Have a great idea for a product, but need help making it a reality? We’re here to help. Startup Matchmaker is the best place for designers and developers to find each other.
+
+Create a profile
+
+---
+
+Touts:
+
+Create a Profile (Merriweather, 25px)
+Are you a Designer? Developer? Put yourself out there so that others can find you!
+Sign up now
+
+--
+
+Find a Developer
+Looking for a fantastic developer to work with on the next big thing? Look no further.
+Start your search
+
+--
+
+Find a Designer
+Need someone who can make a product intuitive and appealing? Get ready.
+Start your search

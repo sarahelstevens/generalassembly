@@ -1,0 +1,153 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11080\viewh16360\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 > Week Three - Tuesday\
+\
+
+\fs24 Layout Lab\
+\
+HTML5 Structural Elements\
+\
+
+\b0 - Gives more meaning and organisation
+\b \
+
+\b0 - Can be used multiple times per page\
+- Each use must reflect proper semantic meaning\
+\
+
+\b When to use <nav>?
+\b0 \
+\
+- Major navigation blocks / not for footer elements\
+- Use unordered lists within <footer>\
+\
+
+\b CSS
+\b0 \
+\
+selector \{ property: value; \}\
+p \{ color: black; \}\
+\
+
+\b IDs are unique
+\b0 \
+\
+#content-wrap \{\'85\}\
+\
+
+\b Classes can be used many times \
+
+\b0 \
+.post \{\'85\}\
+\
+Favour classes in CSS, they render quickly and allow styles to be reused\
+Overall goal - short selectors, decreasing specificity, creating cleaner, more reusable code\
+\
+\
+
+\b Box Model
+\b0 \
+\
+Margin > border > padding > content\
+\
+Box sizing reset!\
+\
+
+\b Layout
+\b0 \
+\
+
+\b display: block;
+\b0 \
+- begins on a new line\
+\
+
+\b display: inline;
+\b0 \
+- doesn\'92t begin on a new line\
+- will not accept width and height properties\
+- <a> can wrap block level elements\
+\
+
+\b display: inline-block;
+\b0 \
+- can accept width and height properties\
+- need to remove white space by commenting out (prevents 100% width working)\
+\
+
+\b Floats
+\b0 \
+- floated elements are removed from normal document flow\
+- is positioned left or right of its parent\
+- needs a width percentage\
+\
+
+\b Clearing & containing floats
+\b0 \
+- returns page to its normal flow\
+\
+
+\b Tools and Testing
+\b0 \
+- Chrome debugger\
+- html validator\
+- css validator\
+- browser test\
+\
+\
+\
+
+\b\fs28 > Week Three - Thursday\
+\
+
+\fs24 Float Demo
+\b0 \
+\
+<div class=\'93group\'94>\
+<section>\
+			float: left;\
+			width: 60%;\
+</section>\
+\
+<aside>\
+			float: right;\
+			width: 40%;\
+</aside>\
+\
+</div>\
+\
+.group\{clearfix\}\
+\
+\
+
+\b Figure Element
+\b0 \
+\
+<figure> surrounds an image \
+<figcaption> replaces alt text and can be styled\
+\
+
+\b Image width and height\
+
+\b0 \
+- allows images to load faster on the page\
+- do not specify pixels\
+\
+
+\b Box Shadows\
+
+\b0 - inset x and y\
+\
+\
+
+\b Create an Active Class
+\b0 \
+- active nav style\
+\
+vertical-align: bottom;\
+\
+}

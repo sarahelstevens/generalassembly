@@ -46,7 +46,6 @@ body {
      line-height: 1.4;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -78,7 +77,6 @@ footer {
   margin: 0px auto;
   padding: 0px 0px 40px 0px;
   text-align: center;
-
 }
 
 /******************************************
@@ -128,33 +126,14 @@ p{
  color: #606161;         /*light grey*/
 }
 
-nav a{
-  color: #f9e42e;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0px 20px;
-}
-
-article a{
-  color: #033048;
-  font-size: 24px;
-  font-weight: 600;
-  float: right;
-  overflow: hidden;
-}
-
 ul{
   font-size: 26px;
   font-weight: 300;  
   color: #606161;
   width: 600px;
-  padding-left: 0px;
+  padding-left: 50px;
 }
 
-li{
-  list-style: none;
-  color: #033048;
-}
 
 blockquote{
   font-size: 36px;
@@ -254,8 +233,29 @@ em{
   margin-bottom: 80px;
 }
 
+
+.main a{
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+  float: right;
+  overflow: hidden;
+}
+
 .sidebar{
   max-width: 240px;
+  color: #033048;
+}
+
+.sidebar a{
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0px 20px;
+}
+
+.sidebar li{
+  list-style: none;
   color: #033048;
 }
 

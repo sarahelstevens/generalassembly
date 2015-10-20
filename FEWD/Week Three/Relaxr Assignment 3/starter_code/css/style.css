@@ -114,7 +114,7 @@ h4{
 
 
 a{
-  color: #033048;
+  color: #033048;         /*dark blue*/
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
@@ -124,13 +124,14 @@ p{
  font-size: 26px;
  font-weight: 300;  
  color: #606161;         /*light grey*/
+ width: 620px;
 }
 
 ul{
   font-size: 26px;
   font-weight: 300;  
   color: #606161;
-  width: 600px;
+  width: 550px;
   padding-left: 50px;
 }
 
@@ -143,6 +144,7 @@ blockquote{
   text-align: center;
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 em{
@@ -174,7 +176,7 @@ em{
 }
 
 .grey-background{
-  background-color: #f0efef;
+  background-color: #f0efef;     /*lightest grey*/
 }
 
 .yellow-background{
@@ -214,11 +216,22 @@ em{
   margin: 0px;
 }
 
+
 .blognav{
   height: 120px;
-  background-color: #033048;
+  background: none;
+  background-color: #033048;      /*dark blue*/
 }
 
+.blognav a{
+  color: #f9e42e;                 /*yellow*/
+  font-weight: 300; 
+  padding: 0px 20px;
+}
+
+.blognav a:hover{
+  opacity: .8;
+}
 
 .firstletter {
   float: left;
@@ -233,32 +246,65 @@ em{
   margin-bottom: 80px;
 }
 
+.main p{
+  width: 700px;
+}
 
 .main a{
-  color: #033048;
+  color: #033048;                /*dark blue*/
   font-size: 24px;
   font-weight: 600;
   float: right;
   overflow: hidden;
 }
 
+.main a:hover{
+  opacity: .8;
+}
+
 .sidebar{
   max-width: 240px;
-  color: #033048;
+  color: #033048;               /*dark blue*/
 }
 
 .sidebar a{
-  color: #f9e42e;
+  color: #033048;              /*dark blue*/
   font-size: 24px;
-  font-weight: 600;
-  padding: 0px 20px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.sidebar a:hover{
+  opacity: .8;
+}
+
+.sidebar p{
+  color: #033048;              /*dark blue*/
+  font-size: 22px;
+  font-weight: 300;
+  width: 240px;
+  margin-bottom: 0px;
+}
+
+.sidebar img{
+  padding-top: 40px;
+}
+
+.sidebar ul{
+  padding-left: 0px;
 }
 
 .sidebar li{
   list-style: none;
-  color: #033048;
+  color: #033048;              /*dark blue*/
+  font-weight: 300;
 }
 
-.bluetext{
-  color: #033048;
+.learn-more a{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.learn-more a:hover{
+  opacity: .8;
 }

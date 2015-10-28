@@ -1,0 +1,336 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #606161;             /* light grey */
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    background-color: #f0efef;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+.main-nav a:hover,
+.page h1 a:hover,
+.readlink:hover,
+.sidebar a:hover{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    -webkit-transition:     all .1s;
+    -o-transition:          all .1s;
+    transition:             all .1s;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+}
+
+.hidden{
+  display: none;
+}
+
+.page header {
+    padding: 35px 0;
+    overflow: hidden;
+    background: #033048;        /* dark blue */
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-content {
+    margin: 60px auto 30px;
+}
+
+.posts-section {
+    width: 72.92%;              /* 700/960 */
+    margin-right: 2%;           /* 20/960 */
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sidebar {
+    width: 25%;                 /* 240/960 */
+    vertical-align: top;
+    display: inline-block;
+}
+
+.post {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #033048;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post,
+.post img,
+.sidebar ul,
+.about-us{
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    background: #121212;        /* almost black */
+    padding: 75px 0 15px;
+}
+
+footer ul {
+    margin: 75px 0;
+}
+
+footer li {
+    margin: 0 16px;
+    display: inline;
+    list-style: none;
+}
+
+footer li a {
+    padding: 10px;
+}
+
+/* Landing page */
+
+.landing-page header {
+    height: 700px;
+    padding-top: 35px;
+    position: relative;
+    background: url(../images/header_bg.jpg) no-repeat top center #121212;
+    background-size: cover;
+}
+
+.benefits {
+    padding: 100px 0 80px;
+}
+
+.benefits ul {
+    list-style: disc;
+    margin: 30px 0 0 80px;
+}
+
+.testimonial {
+    color: white;
+    padding: 70px 0;
+    /*background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+    background-size: cover;*/
+    position: relative;
+}
+
+/* For anyone interested in adding opacity to a background (bg) image, I've removed the bg image and added relative positioning to the containing element (above) and implemented it as follows: */
+.testimonial:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+    background-size: cover;
+    opacity: 0.85;
+
+}
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+.landing-page h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin: 120px 0 90px;
+}
+
+.landing-page h2 {
+    color: #033048;             /* dark blue */
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.testimonial blockquote {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial blockquote span {
+    display: block;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.main-nav a,
+footer .logo {
+    color: #f9e42e;             /* yellow */
+}
+
+.page h2 a,
+.readlink,
+.sidebar a,
+.sidebar h3,
+.sidebar p {
+    color: #033048;             /* dark blue */
+}
+
+.main-nav a {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 30px;
+    padding: 10px 5px;
+}
+
+.page h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.post p:first-of-type:first-letter {
+    float: left;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 65px;
+    padding:4px 8px 8px 3px;
+}
+
+p {margin-bottom:30px;}
+
+.readlink {
+    display:block;
+    text-align: right;
+}
+
+.readlink,
+.about-us a {
+    font-weight: 600;
+}
+
+.sidebar h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/******************************************
+/* MODULES
+/*******************************************/
+
+.button {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.yellow {
+    color: #033048;
+    background: #f9e42e;        /* yellow */
+}
+
+.blue {
+    color: white;
+    font-size: 24px;
+    background: #033048;        /* dark blue */
+}
+
+.newsletter-signup {
+    padding: 30px;
+    text-align: center;
+    background: #f9e42e;        /* yellow */
+}
+
+
+
+/******************************************
+/* STATE
+/*******************************************/
+
+a:hover,
+.main-nav a:hover{
+    color: white;
+}
+
+.page h2 a:hover,
+.readlink:hover,
+.sidebar a:hover{
+    color: #121212;         /* almost black */
+}
+
+.button:hover{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.blue:hover{
+    color: #f9e42e;         /* yellow */
+}

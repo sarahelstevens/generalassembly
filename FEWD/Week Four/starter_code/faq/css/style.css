@@ -1,0 +1,18 @@
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.answer{
+	display: none;
+}

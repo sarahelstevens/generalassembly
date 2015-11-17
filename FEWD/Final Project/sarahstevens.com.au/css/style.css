@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Sarahstevens.com.au
+Client: Sarah Stevens
+Author: Sarah Stevens
+Developer @GA in Melbourne
 */
 
 
@@ -38,12 +38,20 @@ Developer @GA in NYC
 /* BASE STYLES
 /*******************************************/
 
+html{
+  height: 100%;
+}
+
 body {
-     color: #000;
+     color: #333;
      font-size: 12px;
      line-height: 1.4;
-     font-family:"Apercu Regular", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
+     font-family: 'Apercu', Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
      background-color: #fff;
+     text-align: center;
+     min-height: 100%;
+     padding-bottom: 50px;
+
 }
 
 
@@ -54,49 +62,89 @@ body {
 /* Center the container */
 #container {
   margin: 0 auto;
-
+  width: 100%;
+  min-height: 100%;
 }
 
 header {
+  background-color: #FFE3E4;
   margin: 0 auto;
-  text-align: center;
   height: 200px;
-  background-color: #F5DDD9;
+  
 }
 
 footer {
-  margin: 0 auto;
+  background-color: #FFE3E4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
   text-align: center;
-  height: 50px;
-
 }
 
-section{
-  margin: 0 auto;
+section {
   max-width: 1024px;
+  margin: 0 auto -50px;
+  min-height: 100%
+  padding-bottom:60px;
+  position: relative;
 }
+
+/******************************************
+/* TYPE
+/*******************************************/
+
+
+@font-face{
+  font-family: 'Apercu';
+  src: url('fonts/ApercuRegular.otf');
+}
+
+h1{
+  padding: 60px 0 20px 0;
+  font-size: 32px;
+}
+
+h2{
+  padding: 60px 0 20px 0;
+  font-size: 32px;
+}
+
+h3{
+  padding: 0 0 20px 100px;
+  text-align: left;
+  font-size: 24px;
+}
+
+h5{
+  font-size: 12px;
+  text-align: left;
+  padding: 0 0 20px 100px;
+}
+
+h6{
+  font-size: 12px;
+  text-align: right;
+  padding: 0 0 20px 100px;
+}
+
+p{
+  padding: 0 100px 60px 100px;
+  font-size: 18px;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-nav a{
-  font-size: 16px;
-  color: #000;
-  padding: 0 10px 60px 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-nav a:hover{
-  opacity: 0.7;
-}
-
-#container img{
-  float: left;
-  margin: 0 20px 20px 0;
-  width: 48%;
-}
 
 .logo img{
   margin: 50px;
@@ -106,10 +154,99 @@ nav a:hover{
   opacity: 0.7;
 }
 
-.pink-background{
-  height: 300px;
-  background-color: #F5DDD9;
+.logo #about{
+  filter: invert(100%);
 }
 
+nav a{
+padding:0 10px; 
+}
+
+nav a:hover{
+  opacity: 0.7;
+}
+
+.selected{
+  color: #ff0008;
+}
+
+.selected:hover{
+  opacity: 1;
+}
+
+.index{
+  padding: 0 10px 50px 10px;
+}
+
+.index img{
+  padding: 0 10px 20px 10px;
+  float: left;
+  width: 50%;
+}
+
+.content-image{
+  padding: 40px 20px 40px 20px;
+}
+
+.pink{
+  background-color: #FFE3E4;
+}
+
+.underlay{
+  height: 300px;
+}
+
+.left-column{
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 0 10px 0 100px;
+}
+
+.right-column{
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 0 100px 0 10px;
+}
+
+.about-header{
+  border-bottom: 1px solid #333;
+}
+
+.about-text{
+  padding: 60px 100px 60px 100px;
+}
+
+.contact {
+  padding-bottom: 60px;
+  color: #ff0008;
+}
+
+/*
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.1); 
+  overflow: hidden;
+}*/
+
+/* Phones -----------------------*/
+@media screen and (max-width:767px) {
+
+/* Index Images */
+  .index img{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+  }
 
 
+/* Content Images */
+  #container img{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+  }

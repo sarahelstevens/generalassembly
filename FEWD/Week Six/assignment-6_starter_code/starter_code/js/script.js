@@ -21,7 +21,7 @@ $(document).ready(function(){
 	var cities = $('#city-type').val();
 
 	//change background image depending on input value	
-if (cities == 'NYC'){
+	if (cities == 'NYC'){
 		$('body').attr('class','nyc');	
 	} else if (cities == 'SF'){ 
 		$('body').attr('class','sf');
@@ -31,6 +31,13 @@ if (cities == 'NYC'){
 		$('body').attr('class','austin');
 	} else if (cities == 'SYD'){ 
 		$('body').attr('class','sydney');	
-}
+
+	}
+
+	//single line refactored version
+	// $('body').attr('class', cities.toLowerCase());
+
+		
+
 
 });

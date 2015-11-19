@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Your description goes here">
+        <meta name="keywords" content="one, two, three">
+
+        <title>Blank Template</title>
+
+        <!-- external CSS link -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <header>
+            <h1>Paper, Rock or Scissors?</h1>
+            <p>A steam-powered bot has challenged you to a game. Rock beats scissors, scissors beats paper, and paper beats rock.</p>
+        </header>
+
+            <div class="scoreboard">
+                <div class="header">
+                    <p>Scoreboard</p>
+                </div>
+                <div class="tally">
+                    <div class="you">
+                        <p class="output-you">0</p>
+                        <p>You</p>
+                    </div>
+
+                    <div class="bot">
+                        <p class="output-bot">0</p>
+                        <p>Bot</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Choose Wisely</h2>
+
+            <form>
+                <input type="button" value="Rock" class="submit-btn" id="rock">
+                <input type="button" value="Paper" class="submit-btn" id="paper">
+                <input type="button" value="Scissors" class="submit-btn" id="scissors">
+            </form>
+        
+            <p>You played <span class="userplay"></span> and the bot played <span class ="play"></span>You.<span class="result"></span>
+            </p>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="js/script.js"></script>
+
+    </body>
+</html>

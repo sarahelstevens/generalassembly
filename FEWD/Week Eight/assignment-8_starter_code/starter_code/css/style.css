@@ -240,6 +240,28 @@ footer p {
     font-weight: 600;
 }
 
+
+.form h1{
+    font-size: 1.625em;         /* 26px */
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: .769em;
+    margin-bottom: 1.25rem;        /* 20px */
+}
+
+.form label{
+    font-size: .875em;         /* 14px */
+    line-height: 1.2;
+    margin-bottom: .769em;
+}
+
+.form value{}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
 /******************************************
 /* MODULES
 /*******************************************/
@@ -272,10 +294,14 @@ footer p {
     padding: 1.25em;          /* 20px */
     text-align: center;
     background: #f9e42e;        /* yellow */
+} 
+
+.form input{
+    border: none;
+    background-color: #f0efef;
+    border-bottom: 1px solid #606161;
+    size: 200px;
 }
-
-
-
 
 .main-nav a {padding: .75em .25em;}  /* 12px 4px */
 .mobile-nav{float:right;}

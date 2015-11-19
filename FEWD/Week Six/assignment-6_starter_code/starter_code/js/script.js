@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}
 });
 
-// 	determine input selected and create event on menu change
+	//determine input selected and create event on menu change
 	$('select').change(function(event){
 	event.preventDefault();
 	//create variable of user input	

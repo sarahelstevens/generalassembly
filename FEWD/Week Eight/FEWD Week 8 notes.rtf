@@ -76,4 +76,312 @@ A button can be of three types: submit, reset or button\
 \
 Field sets are a wrapper for grouped form elements\
 \
-Legend goes inside fieldset (defines the grouping name for the fields)}
+Legend goes inside fieldset (defines the grouping name for the fields)\
+\
+
+\b ______________________________\
+
+\b0 \
+\
+
+\b\fs28 > Week Eight - Thursday\
+\
+
+\fs24 Javascript Review\
+\
+Javascript allows you to manipulate data\
+\
+\
+What
+\b0  is the data?\
+\
+- 
+\b Text
+\b0 : a string, between single or double quotes\
+- 
+\b Numbers
+\b0 : integers, floats\
+- 
+\b Dates\
+- Arrays
+\b0 : arrangements of data, set out like a list, numbers, text or booleans inside square brackets\
+- 
+\b Booleans
+\b0 : true or false \
+- 
+\b Object
+\b0 : inside \{ key: value \}, 3 apples? \{ \'91apple\'92: 3\}
+\b \
+\
+\
+A variable is a bucket into which you put data\
+\
+
+\b0 By declaring your variable it can be reused, and update across an entire document \
+\
+As a programmer, declaring variables helps you organise your code much more effectively\
+
+\b \
+______________________________\
+\
+\
+( ) = parentheses\
+\
+
+\b0 Parentheses group the data telling the computer what part to work with:\
+\
+	if (3 >5)\
+\
+
+\b \{ \} = curly braces
+\b0 \
+\
+Within the curly braces you can have a block of code of any length to create an action\
+\
+
+\b functions\
+
+\b0 \
+
+\b \
+
+\b0 	function add (num 1, num 2) \{\
+		return num 1 + num 2;\
+	\}\
+\
+	var user 1 = \'85;\
+	var user 2 = \'85;\
+\
+	var result = add (user 1, user 2);\
+
+\b \
+
+\b0 > Bug solve with: console.log(result);
+\b \
+
+\b0 \
+Arguments \'93user 1\'94 and \'93user 2\'94 are within the parentheses\
+\
+The function is named \'93add\'94 and the numbers are passed into the function declaration to run that block of code.
+\b \
+\
+
+\b0 The \'93return\'94 code is waiting to run when the function \'93add\'94 is called
+\b \
+\
+
+\b0 (Return is a keyword that javascript knows): {\field{\*\fldinst{HYPERLINK "http://www.w3schools.com/js/js_reserved.asp"}}{\fldrslt http://www.w3schools.com/js/js_reserved.asp}}
+\b \
+\
+\
+.log > the \'93.\'94 calls the log function\
+\
+______________________________\
+\
+Loops\
+\
+
+\b0 Loops are used when you need to repeat an action over and over\
+i.e. here is one block of code, repeat that block a number of times\
+\
+
+\b The for loop is the simplest loop to use: 
+\b0 for (this value) run \{this\} block of code\
+\
+	for (i=0; i < 5; i = i +1 )\{\
+	console.log(\'93at loop number\'94 + i);\
+	\}\
+\
+1. i=0 indicates that you begin at zero;\
+2. as long as i is less than 5; (computer runs this code and then loops again)\
+3. increment by one each time until 5 is reached (this can be written as \'94i +=1\'94 or \'93i++\'94)\
+\
+\'93at loop number\'94 prints out what loop number i is at\
+\
+you can write \'93for (var i=0)\'94\
+
+\b \
+Example using the .length of an array instead:
+\b0 \
+\
+	var sweetArray = [\'93cats\'94, \'93dogs\'94, \'93jetski\'94]\
+\
+	for (i=0; i < sweetArray.length ; i=i+1 )\{\
+		console.log( sweetArray[i] );\
+	\}\
+\
+
+\b forEach (code resulting in the same outcome as above):
+\b0 \
+\
+	sweetArray.forEach(function(element)\{\
+		console.log(element);\
+	\});\
+
+\b \
+______________________________\
+
+\b0 \
+\
+
+\b Ternary Statement
+\b0 \
+\
+Shorthand IF statement\
+\
+	var drink = (3<5)? \'93wine\'94:\'94water\'94;\
+\
+? = ternary statement = execute water\
+\
+means if condition  (3<5) execute wine if true, execute water if false\
+\
+
+\b ______________________________\
+
+\b0 \
+
+\b Comparisons
+\b0 \
+\
+<		less than\
+>		greater than\
+< =		less than or equal to\
+> =		greater than or equal to\
+= =		equal to\
+= = =		exactly equal to\
+! = =		not equal to\
+\
+&&		and\
+||		or\
+
+\b ______________________________
+\b0 \
+
+\b \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx4886\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs28 \cf0 jQuery
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+jQuery is a library that helps you interact with the DOM\
+\
+jQuery uses the $ to run a function to call an element ()\
+\
+	$(\'93p\'94)\
+\
+jQuery was designed with front end developers in mind which means it uses the same syntax as CSS\
+\
+\
+	HMTL: 	<div class = \'93highlight\'94>stuff</div>\
+\
+	CSS: 	.highlight \{\}\
+
+\b \
+
+\b0 	jQuery: 
+\b \
+\
+
+\b0 		var block = $(\'93highlight\'94);\
+	\
+		$block.text(\'93stuff\'94)
+\b \
+		\
+\
+OR , Single line	
+\b0 $(\'93highlight\'94).text(\'93stuff\'94);
+\b \
+\
+
+\b0 \
+\
+
+\b Variables
+\b0  in parentheses don\'92t require \'93\'94\
+
+\b \
+______________________________\
+\
+Events\
+\
+
+\b0 Events are what occurs at a specific time or a user input action\
+\
+document.ready handler stops the javascript from running until the page has loaded\
+\
+attach a function to an event handler\'85\
+\
+.click is an event handler in the DOM .click requires an argument in the parentheses\
+\
+	$(\'93highlight\'94).click(function()\{\
+\
+	$(event.target).val;\
+\
+	\});\
+\
+event.target in a click function = what you clicked on, by using that it will target just one element, rather than targeting a class used multiple times etc.\
+\
+\
+If you\'92re going to use a function more than once you should name it, and not use an anonymous function.\
+\
+Functions can be passed around just like any other data.\
+\
+
+\b ______________________________\
+
+\b0 \
+	$(document).ready(function()\{\
+\
+	ALL OUR CODE\
+\
+	\});\
+\
+
+\b ______________________________\
+\
+
+\b0 \
+	event.preventDefault();\
+\
+
+\b ______________________________\
+
+\b0 \
+\
+
+\b Traversing the DOM
+\b0 \
+\
+	$(\'93.highlight\'94).parent();\
+\
+targets the parent of that DOM element\
+\
+
+\b ______________________________\
+
+\b0 \
+
+\b Objects
+\b0 \
+\
+An object is the fundamental data type of javascript, everything is an object.\
+\
+	var myArr = [\'93wine\'94, \'93candles\'94, \'93roses\'94];\
+\
+	var myObj = \{	 0 : \'93wine\'94,\
+		      		 1: \'93candles\'94,\
+		     		 2: \'93roses\'94\};\
+\
+Objects allow you to organise data together that has a more complex quality than a simple string or number. You can store an array in an object, or objects in an array.\
+\
+To do:\
+\
+- CSS hover on images\
+- Mobile Footer\
+- Mobile Menu\
+\
+
+\b \
+\
+}

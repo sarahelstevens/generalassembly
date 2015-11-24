@@ -12,16 +12,16 @@ Developer @GA in Melbourne
 
 /* Box Model Hack */
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
 
 /* Clearfix: contain floats */
 .group:after {
-    content: " ";
-    display: block;
-    clear: both;
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .alignright {
@@ -43,14 +43,13 @@ html{
 }
 
 body {
-     color: #333;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: 'Apercu', Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
-     background-color: #fff;
-     text-align: center;
-     min-height: 100%;
-     padding-bottom: 50px;
+  font-family: 'Apercu', Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
+  background-color: #fff;
+  text-align: center;
+  min-height: 100%;
+  line-height: 1.4;
+  font-size: 12px;
+  color: #333;
 
 }
 
@@ -61,34 +60,35 @@ body {
 
 /* Center the container */
 #container {
-  margin: 0 auto;
-  width: 100%;
+  max-width: 1024px;
   min-height: 100%;
+  margin: 0 auto;
 }
 
 header {
   background-color: #FFE3E4;
+  min-height: 100%;
   margin: 0 auto;
   height: 200px;
-  
+}
+
+.footer{
+  background-color: #FFE3E4;
+  height: 50px;
 }
 
 footer {
-  background-color: #FFE3E4;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 50px;
 }
 
 section {
-  max-width: 1024px;
-  margin: 0 auto -50px;
-  min-height: 100%
-  padding-bottom:60px;
+  padding-bottom: 50px;
   position: relative;
+  max-width: 1024px;
+  min-height: 100%;
+  margin: 0 auto;   
 }
 
 /******************************************
@@ -107,7 +107,7 @@ h1{
 }
 
 h2{
-  padding: 60px 0 20px 0;
+  padding: 0 0 20px 0;
   font-size: 32px;
 }
 
@@ -119,20 +119,11 @@ h3{
 
 h5{
   font-size: 12px;
-  text-align: left;
-  padding: 0 0 20px 100px;
-}
-
-h6{
-  font-size: 12px;
-  text-align: right;
-  padding: 0 0 20px 100px;
 }
 
 p{
   padding: 0 100px 60px 100px;
   font-size: 18px;
-  display: block;
 }
 
 a{
@@ -141,6 +132,13 @@ a{
   color: #333;
 }
 
+.footer-right a{
+  font-size: 12px;
+}
+
+.footer-right a:hover{
+  color: #ff0008;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -159,7 +157,7 @@ a{
 }
 
 nav a{
-padding:0 10px; 
+  padding:0 10px; 
 }
 
 nav a:hover{
@@ -175,17 +173,20 @@ nav a:hover{
 }
 
 .index{
-  padding: 0 10px 50px 10px;
+  padding: 0 10px 100px 10px;
 }
 
 .index img{
   padding: 0 10px 20px 10px;
-  float: left;
+  display: inline-block;
+  max-width: 502px;
+  min-height: 300px;
   width: 50%;
 }
 
 .content-image{
-  padding: 40px 20px 40px 20px;
+  padding: 0 20px 40px 20px;
+  width: 100%;
 }
 
 .pink{
@@ -193,21 +194,48 @@ nav a:hover{
 }
 
 .underlay{
+  position: absolute;
   height: 300px;
+  top: 200px;
+  right: 0;
+  left: 0;
+}
+
+.footer-left{
+  padding: 20px 0 0 20px;
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.footer-right{
+  text-align: right;
+  padding: 20px 20px 0 0;
+  float: right;
+  width: 50%;
 }
 
 .left-column{
-  float: left;
-  width: 50%;
+  display: inline-block;
   text-align: left;
-  padding: 0 10px 0 100px;
+  padding-top: 0;
+  width: 50%;
+}
+
+.left-column p{
+  padding: 0 10px 60px 100px;
 }
 
 .right-column{
-  float: left;
-  width: 50%;
+  display: inline-block;
+  vertical-align: top;
   text-align: left;
-  padding: 0 100px 0 10px;
+  padding-top: 0;
+  width: 50%;
+}
+
+.right-column p{
+  padding: 0 100px 60px 10px;
 }
 
 .about-header{
@@ -223,6 +251,8 @@ nav a:hover{
   color: #ff0008;
 }
 
+
+
 /*
 .grow { 
   transition: all .2s ease-in-out; 
@@ -231,22 +261,59 @@ nav a:hover{
 .grow:hover { 
   transform: scale(1.1); 
   overflow: hidden;
-}*/
+}
+*/
 
 /* Phones -----------------------*/
 @media screen and (max-width:767px) {
 
 /* Index Images */
-  .index img{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
+
+.index img{
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+  width: 100%;
   }
 
 
 /* Content Images */
-  #container img{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-  }
+
+#container img{
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Text Floats*/
+
+.left-column {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.right-column{
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Text Layout*/
+
+p,
+h2,
+h3{
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  display: block;
+}
+
+.pink{
+  background-color: #FFE3E4;
+}
+
+.underlay{
+  height: 100px;
+}

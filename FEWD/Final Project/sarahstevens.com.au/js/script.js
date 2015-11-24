@@ -1,10 +1,16 @@
-//Universal
+//Push footer to bottom of page if page is shorter than window height
 
-//Index Page
+$(document).ready(function(){
 
-//Project Page
+var h = window.innerHeight;
+	body = $('section').height();
 
-//About Page
+if (body < h){
+	$('section').css('height', h-250);
+} else if (body > h){
+	$('section').css('none');
+}
 
-//Contact Page
+});
 
+//Mobile Menu Slide Down

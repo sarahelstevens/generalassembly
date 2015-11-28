@@ -24,16 +24,6 @@ Developer @GA in Melbourne
   clear: both;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -50,7 +40,6 @@ body {
   line-height: 1.4;
   font-size: 12px;
   color: #333;
-
 }
 
 
@@ -67,14 +56,24 @@ body {
 
 header {
   background-color: #FFE3E4;
-  min-height: 100%;
   margin: 0 auto;
-  height: 200px;
+  height: 500px;
 }
 
-.footer{
+nav{
   background-color: #FFE3E4;
-  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  top: -350px;
+}
+
+section {
+  padding-bottom: 50px;
+  position: relative;
+  max-width: 1024px;
+  min-height: 100%;
+  margin: 0 auto;
+  top: -250px;   
 }
 
 footer {
@@ -83,13 +82,12 @@ footer {
   height: 50px;
 }
 
-section {
-  padding-bottom: 50px;
-  position: relative;
-  max-width: 1024px;
-  min-height: 100%;
-  margin: 0 auto;   
+.footer{
+  background-color: #FFE3E4;
+  height: 50px;
 }
+
+
 
 /******************************************
 /* TYPE
@@ -122,11 +120,13 @@ h5{
 }
 
 p{
+  font-family: 'Merriweather', serif;
   padding: 0 100px 60px 100px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a{
+  font-family: 'Apercu', Calibri, sans-serif;
   text-decoration: none;
   font-size: 16px;
   color: #333;
@@ -145,15 +145,11 @@ a{
 /*******************************************/
 
 .logo img{
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .logo img:hover{
   opacity: 0.7;
-}
-
-.logo #about{
-  filter: invert(100%);
 }
 
 nav a{
@@ -180,7 +176,6 @@ nav a:hover{
   padding: 0 10px 20px 10px;
   display: inline-block;
   max-width: 502px;
-  min-height: 300px;
   width: 50%;
 }
 
@@ -191,14 +186,6 @@ nav a:hover{
 
 .pink{
   background-color: #FFE3E4;
-}
-
-.underlay{
-  position: absolute;
-  height: 300px;
-  top: 200px;
-  right: 0;
-  left: 0;
 }
 
 .footer-left{
@@ -238,12 +225,13 @@ nav a:hover{
   padding: 0 100px 60px 10px;
 }
 
-.about-header{
+.about-nav{
+  padding-bottom: 20px;
   border-bottom: 1px solid #333;
 }
 
 .about-text{
-  padding: 60px 100px 60px 100px;
+  padding: 20px 100px 60px 100px;
 }
 
 .contact {
@@ -251,7 +239,13 @@ nav a:hover{
   color: #ff0008;
 }
 
+.mobile-nav{
+  display: none;
+}
 
+.mobile-nav-open{
+  display: none;
+}
 
 /*
 .grow { 
@@ -267,53 +261,114 @@ nav a:hover{
 /* Phones -----------------------*/
 @media screen and (max-width:767px) {
 
-/* Index Images */
+  /* Index Images */
 
-.index img{
-  padding: 0 20px 20px 20px;
-  margin: 0 auto;
-  width: 100%;
+  .index img{
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    width: 100%;
   }
 
 
-/* Content Images */
+  /* Content Images */
 
-#container img{
-  padding: 0 20px 20px 20px;
-  margin: 0 auto;
-  width: 100%;
-}
+  #container img{
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-/*Text Floats*/
+  /*Two Column Layout*/
 
-.left-column {
-  padding: 0 20px 20px 20px;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
+  .left-column{
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.right-column{
-  padding: 0 20px 20px 20px;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
+  .left-column p{
+    padding: 0 20px 20px 20px;
+  }
 
-/*Text Layout*/
+  .right-column{
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-p,
-h2,
-h3{
-  padding: 0 20px 20px 20px;
-  text-align: center;
-  display: block;
-}
+  .right-column p{
+    padding: 0 20px 20px 20px;
+  }
 
-.pink{
-  background-color: #FFE3E4;
-}
 
-.underlay{
-  height: 100px;
-}
+  /*Text Layout*/
+
+  p,
+  h2,
+  h3{
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    display: block;
+  }
+
+  h2,
+  h3{
+    padding-top: 40px;
+  }
+
+  /*Mobile Nav*/
+
+  header{
+    height: 400px;
+  }
+
+  nav{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+    position: relative;
+    top: -250px;
+  }
+
+
+  nav.open{
+    height: 200px;
+    background-color: #FFE3E4;
+  }
+
+  nav a{
+    display: block;
+    margin-bottom: 20px;
+    }
+
+  .mobile-nav{
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+    top: -250px;
+    transition: all 0.1s;
+  }
+
+  .mobile-nav-open{
+    display: none;
+  }
+
+  .mobile-nav-open{
+    display: block;
+  }
+
+  .about-nav{
+    padding-bottom: 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .about-text{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: block;
+  }
+}  

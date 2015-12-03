@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11300\viewh16360\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs28 \cf0 > Week Seven - Tuesday\
+\
+
+\fs24 Responsive Web Design\
+\
+
+\b0 - Fixed layout relies on a container of a fixed width, static size\
+- Responsive styles for different screen widths, fluid layout\
+- Fluid - sized in percentages\
+- Elastic - sized in ems and /rems\
+\
+\
+
+\b EM vs REM\
+\
+- EM
+\b0 \
+- Size based on the with of the letter \'93m\'94\
+- Same as percentages\
+- 1em = 100% font size = generally 16px\
+- Child size is based on the font size of the parent\
+	> parent \{font-size: 16px;\}\
+	> child \{font-size: 2em;\}\
+	> Child\'92s font size is 32px\
+\
+
+\b - REM
+\b0 \
+- \'93Root\'94 EM\
+- Placed in the HTML element\
+\
+- Can scale EMs with media queries\
+\
+
+\b Layout
+\b0 \
+\
+Floating box model - border box reset to extend to border, at the top of your CSS\
+\
+Can nest a nav in a nav to create a subnav\
+\
+
+\b CSS Positioning
+\b0 \
+\
+- html \{	min-height:100%;\
+		position:relative;\
+	  \}\
+- footer\{position: absolute;\}\
+\
+- anything set to absolute needs to be in a container that is set to relative\
+\
+
+\b Building Responsively\
+\
+Media Queries
+\b0 \
+\
+Media queries are a way to provide conditional CSS based on the type or device, width of device, or orientation.\
+\
+
+\b Standard media query sizes:
+\b0 \
+Small up to 768px\
+Medium: 768-991px\
+Large: 992px +\
+\
+
+\b Media Query Syntax
+\b0 \
+\
+Separate multiple clauses with \'93and\'94\
+  \
+@media only screen and\
+(max-width: xPx)\
+(min-width: xPx)\
+(max-device-width: xPx)\
+(min-device-width: xPx)\
+\
+For iPad (doesn\'92t work for Phones)\
+(orientation: portrait)\
+(orientation: landscape)\
+\
+
+\b Determining Breakpoints\
+\
+
+\b0 Breakpoints determined by your design, not device\
+\
+
+\b Mobile First
+\b0 \
+\
+Best practice:\
+- Common styles in base style sheet (global styles)\
+- Add media queries for mobile and larger device styles\
+- Nothing has to override styles it doesn\'92t need\
+\
+
+\b Mobile Display: Viewport
+\b0 \
+\
+<meta name =\'93viewport\'94 content=\'93width=device-width, initial scale=1\'94>\
+\
+Goes in the <head> with the other meta tags\
+\
+
+\b Responsive Images\
+
+\b0 \
+Set width and height in HTML (no pixels):\
+\
+<img src=\'93\'85\'94 width =\'93280\'94 height=\'93280\'94>\
+\
+In CSS: \
+\
+max-width: 100%\
+height: auto;\
+\
+\
+
+\b\fs28 > Week Seven - Thursday\
+\
+
+\b0\fs24 To centre an image > place it within a div and set text align to centre\
+\
+To centre something between a left and right floated element:\
+float: none, display: block, margin: 0 auto, width: x\
+\
+Vendor prefixes are used for CSS3 elements that are not supported by the browser > Prefixr.com\
+\
+\
+
+\b Responsive Design
+\b0 \
+\
+Set widths in percentages\
+Size fonts in ems\
+Identify stacked content vs columns\
+Identify extra styling/content\
+\
+
+\b Responsive Code
+\b0 \
+\
+Media Queries (CSS - at the end)\
+Viewport meta tag (HTML - in the head)\
+\
+}

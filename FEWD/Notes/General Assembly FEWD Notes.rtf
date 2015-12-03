@@ -1,0 +1,198 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red102\green0\blue141;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10680\viewh13800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+
+\b Week One - Tuesday
+\b0 \
+\
+HTML = an (XML) Extensible Markup Language\
+\
+HTML element: <start tag> contents </end tag>\
+\
+Not all elements need a closing tag e.g. img src and <br>\
+\
+Tag attributes: <tag name attribute name =\'93value\'94>\
+\
+____________\
+\
+
+\b Basic Document Type
+\b0 \
+\
+<!DOCTYPE html> - tells the browser it is an html 5 document\
+\
+<html>\
+\
+<head> - document metadata container\
+(CSS styles live here)\
+</head>\
+\
+<body> - on screen container\
+(javascript lives here)\
+</body>\
+\
+</html>\
+____________\
+\
+
+\b Document Level Tags
+\b0  - inside the head, not visible\
+\
+<head>\
+<meta charset="utf-8">\
+<title>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf2 <link rel=\cf0 "\cf2 stylesheet\cf0 "\cf2  href=\cf0 "\cf2 css/style.css\cf0 "\cf2 >\cf0  - doesn\'92t need closing tags because there is no content\
+</head>\
+____________\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf0 Content Tags
+\b0 \
+\
+<h1> etc\
+\
+<p> - paragraph\
+<code> - to display computer code\
+<span> - to span a portion of text within a paragraph\
+\
+<ul> - unordered lists, bullet points\
+<li> - ordered lists\
+\
+<a href=\'93Link\'94 > first item </a> - links\
+<a href=\'93#section2\'94> Jump to section 2 </a>\
+<a href=\'93/some/other/page.com\'94> See more </a>\
+<a href=\'93http://www.blah.com> External website </a>\
+\
+____________\
+\
+
+\b DOM 
+\b0 = Document Object Model\
+A tree like structure of your HTML document for accessing and manipulating its content\
+i.e. the indented flow that can be seen in devtools\
+____________\
+\
+
+\b Github
+\b0  = a version control program\
+\
+
+\b Repository
+\b0  = a central location where data is stored and managed\
+\
+
+\b Clone
+\b0  = download data from cloud to your local machine\
+\
+
+\b Commit
+\b0  = save a version of your project to git\
+\
+
+\b Master
+\b0  = the main, stable branch of the code base > engineers create new branches for the portions of the code they will be working on\
+\
+____________\
+
+\b \
+Resources
+\b0 \
+\
+Mozilla Developer Network\
+HTML Dog\
+W3schools\
+CSS Tricks\
+Adobe Kuler\
+CSS Specificity\
+____________\
+\
+\
+
+\b Week One - Thursday\
+\
+
+\b0 Type in HTML tag and hit tab in code editor to setup tags\
+\
+Select text > edit > convert case\
+\
+____________\
+\
+<!DOCTYPE html>\
+<html lang="en">\
+	<head> \
+		<meta charset="utf-8">\
+		<title>  </title> \
+		<link rel="stylesheet" href="css/style.css">\
+	</head>\
+\
+	<body> \
+	</body>\
+\
+</html>\
+\
+____________\
+\
+
+\b Image Element
+\b0 \
+\
+<img src=\'93img/imagename.pg\'94 alt=\'93alternative text\'94>\
+\
+
+\b Relative file path
+\b0  = relative to the current file\
+
+\b Absolute file path
+\b0  = index is in a folder separately to the images  \'93../images/logo.png\'94\
+
+\b ..
+\b0  = go up a level in the directory on a web server \
+
+\b URL
+\b0  = hosted on the web\
+\
+____________\
+\
+
+\b CSS Rule
+\b0 \
+\
+Selector \{ property : value; \}\
+\
+= \{declaration\}\
+\
+____________\
+\
+Cascading = if a rule is repeated, all previous rules will be overridden\
+Specificity = more specific rules override less specific rules\
+Inheritance = chile elements inherit rules from previous parent elements\
+\
+Type (e.g. p, div)  *0-0-1\
+Class (.example) *0-1-0\
+ID (#example) *1-0-0\
+\
+\
+<img class= "float-right" src="images/avatar.png" alt="Avatar">\
+\
+\
+____________\
+\
+\
+
+\b Debugging Resource
+\b0 \
+\
+Validator.w3.org\
+\
+\
+cmd + tab = tab between programs\
+cmd + r = refresh\
+\
+\
+}

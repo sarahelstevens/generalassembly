@@ -1,18 +1,11 @@
-//Push footer to bottom of page if page is shorter than window height
 
-var h = window.innerHeight;
-	body = $('section').height();
-	nav =$('nav').height();
-
-console.log(body);
-
-if (body < h){
-	$('section').css('height', h-600);
-} else if (body > h || body === h){
-	//do nothing
-}
+$(document).ready(function(){
 
 //Mobile Menu Slide Down
+
+
+var h = window.innerHeight;
+	nav = $('nav').height();
 
 function toggleMobileNav(){
     $('nav, .mobile-nav').toggleClass('open');
@@ -23,12 +16,25 @@ function toggleMobileNav(){
     	$('.mobile-nav').text('Menu').css('color', '#333');
     	$('nav').css('height', nav);
     }
-
   }
 
-$(document).ready(function(){
   $('.mobile-nav').click(toggleMobileNav);
+
 });
 
 
-//
+
+
+//Push footer to bottom of page if page is shorter than window height
+
+// 	var h = window.innerHeight;
+// 	body = $('section').height();
+// 	nav = $('nav').height();
+//  	header = $('header').height();
+//  	footer = $('footer').height();
+
+// if (body < h){
+// 	$('section').css('height', h - (header + footer));
+// } else if (body > h || body === h){
+// 	//do nothing
+// }

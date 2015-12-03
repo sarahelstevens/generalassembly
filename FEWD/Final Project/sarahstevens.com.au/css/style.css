@@ -28,19 +28,37 @@ Developer @GA in Melbourne
 /* BASE STYLES
 /*******************************************/
 
-html{
-  height: 100%;
+
+/* Start: Footer at bottom */
+
+html {
+    position: relative;
+    min-height: 100%;
 }
+body {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* End: Footer at bottom */
 
 body {
   font-family: 'Apercu', Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
   background-color: #fff;
   text-align: center;
-  min-height: 100%;
+  /*min-height: 100%;*/
   line-height: 1.4;
   font-size: 12px;
   color: #333;
 }
+
+
 
 
 /******************************************
@@ -54,37 +72,35 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   background-color: #FFE3E4;
+  position: relative;
   margin: 0 auto;
-  height: 500px;
+  top: 0;
 }
 
 nav{
   background-color: #FFE3E4;
+  padding-bottom: 20px;
   position: relative;
   margin: 0 auto;
-  top: -350px;
 }
 
 section {
   padding-bottom: 50px;
   position: relative;
   max-width: 1024px;
-  min-height: 100%;
-  margin: 0 auto;
-  top: -250px;   
+  margin: 0 auto;  
 }
 
 footer {
-  max-width: 1024px;
-  margin: 0 auto;
-  height: 50px;
-}
-
-.footer{
   background-color: #FFE3E4;
-  height: 50px;
+  margin: 0 auto;
 }
 
 
@@ -110,8 +126,8 @@ h2{
 }
 
 h3{
-  padding: 0 0 20px 100px;
-  text-align: left;
+  padding: 0 0 20px 0px;
+  text-align: center;
   font-size: 24px;
 }
 
@@ -122,6 +138,7 @@ h5{
 p{
   font-family: 'Merriweather', serif;
   padding: 0 100px 60px 100px;
+  line-height: 1.8;
   font-size: 16px;
 }
 
@@ -145,11 +162,16 @@ a{
 /*******************************************/
 
 .logo img{
-  margin: 50px auto;
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
 }
 
 .logo img:hover{
   opacity: 0.7;
+}
+
+.logo a{
+  display: inline-block;
 }
 
 nav a{
@@ -173,11 +195,33 @@ nav a:hover{
 }
 
 .index img{
+  max-height: 100%;
+  max-width:100%;
+}
+
+.index a{
+  display: block;
+}
+
+article{
   padding: 0 10px 20px 10px;
   display: inline-block;
+  text-align: center;
   max-width: 502px;
+  overflow: hidden;
+  height: auto;
   width: 50%;
 }
+
+/*.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.1); 
+  overflow: hidden;
+}
+*/
 
 .content-image{
   padding: 0 20px 40px 20px;
@@ -188,19 +232,27 @@ nav a:hover{
   background-color: #FFE3E4;
 }
 
+.underlay{
+  position: absolute;
+  height: 200px;
+  width: 100%;
+}
+
 .footer-left{
   padding: 20px 0 0 20px;
+  display: inline-block;
   text-align: left;
-  float: left;
   width: 50%;
 }
 
 .footer-right{
-  text-align: right;
   padding: 20px 20px 0 0;
-  float: right;
+  display: inline-block;
+  text-align: right;
   width: 50%;
 }
+
+
 
 .left-column{
   display: inline-block;
@@ -225,13 +277,12 @@ nav a:hover{
   padding: 0 100px 60px 10px;
 }
 
-.about-nav{
-  padding-bottom: 20px;
+.about-header {
   border-bottom: 1px solid #333;
 }
 
 .about-text{
-  padding: 20px 100px 60px 100px;
+  padding: 40px 100px 60px 100px;
 }
 
 .contact {
@@ -247,23 +298,12 @@ nav a:hover{
   display: none;
 }
 
-/*
-.grow { 
-  transition: all .2s ease-in-out; 
-}
-
-.grow:hover { 
-  transform: scale(1.1); 
-  overflow: hidden;
-}
-*/
-
 /* Phones -----------------------*/
 @media screen and (max-width:767px) {
 
   /* Index Images */
 
-  .index img{
+  article{
     padding: 0 20px 20px 20px;
     margin: 0 auto;
     width: 100%;
@@ -318,39 +358,49 @@ nav a:hover{
     padding-top: 40px;
   }
 
-  /*Mobile Nav*/
-
-  header{
-    height: 400px;
+  .footer-left{
+    background-color: #FFE3E4;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    
   }
 
+  .footer-right{
+    background-color: #FFE3E4;
+    padding: 0 0 30px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  /*Mobile Nav*/
+
   nav{
+    transition: height 1s;
+    padding-bottom: 0;
+    overflow: hidden;
     clear: both;
     height: 0;
-    overflow: hidden;
-    transition: height 1s;
-    position: relative;
-    top: -250px;
   }
 
 
   nav.open{
-    height: 200px;
     background-color: #FFE3E4;
   }
 
   nav a{
-    display: block;
     margin-bottom: 20px;
+    display: block;
     }
 
   .mobile-nav{
-    display: block;
-    width: 100%;
+    transition: all 0.1s;
     padding-bottom: 20px;
     position: relative;
-    top: -250px;
-    transition: all 0.1s;
+    display: block;
+    width: 100%;  
   }
 
   .mobile-nav-open{
@@ -362,12 +412,13 @@ nav a:hover{
   }
 
   .about-nav{
-    padding-bottom: 0;
     border-bottom: 1px solid #333;
+    padding-bottom: 0;
+    
   }
 
   .about-text{
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 100px 20px;
     text-align: center;
     display: block;
   }

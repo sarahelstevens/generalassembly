@@ -35,9 +35,11 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin: 0 0 50px; /* bottom = footer height */
 }
+
 footer {
     position: absolute;
     height: 50px;
@@ -52,7 +54,6 @@ body {
   font-family: 'Apercu', Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;
   background-color: #fff;
   text-align: center;
-  /*min-height: 100%;*/
   line-height: 1.4;
   font-size: 12px;
   color: #333;
@@ -66,12 +67,6 @@ body {
 /*******************************************/
 
 /* Center the container */
-#container {
-  max-width: 1024px;
-  min-height: 100%;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -98,9 +93,20 @@ section {
   margin: 0 auto;  
 }
 
+article{
+  padding: 0 10px 20px 10px;
+  display: inline-block;
+  text-align: center;
+  max-width: 502px;
+  overflow: hidden;
+  height: auto;
+  width: 50%;
+}
+
 footer {
   background-color: #FFE3E4;
   margin: 0 auto;
+
 }
 
 
@@ -203,26 +209,6 @@ nav a:hover{
   display: block;
 }
 
-article{
-  padding: 0 10px 20px 10px;
-  display: inline-block;
-  text-align: center;
-  max-width: 502px;
-  overflow: hidden;
-  height: auto;
-  width: 50%;
-}
-
-/*.grow { 
-  transition: all .2s ease-in-out; 
-}
-
-.grow:hover { 
-  transform: scale(1.1); 
-  overflow: hidden;
-}
-*/
-
 .content-image{
   padding: 0 20px 40px 20px;
   width: 100%;
@@ -252,8 +238,6 @@ article{
   width: 50%;
 }
 
-
-
 .left-column{
   display: inline-block;
   text-align: left;
@@ -277,7 +261,7 @@ article{
   padding: 0 100px 60px 10px;
 }
 
-.about-header {
+.nav-underline {
   border-bottom: 1px solid #333;
 }
 
@@ -294,9 +278,15 @@ article{
   display: none;
 }
 
-.mobile-nav-open{
-  display: none;
+/*.grow { 
+  transition: all .2s ease-in-out; 
 }
+
+.grow:hover { 
+  transform: scale(1.1); 
+  overflow: hidden;
+}
+*/
 
 /* Phones -----------------------*/
 @media screen and (max-width:767px) {
@@ -358,6 +348,28 @@ article{
     padding-top: 40px;
   }
 
+  body {
+    margin: 0 0 100px; /* bottom = footer height */
+  }
+  footer {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .about-nav{
+    border-bottom: 1px solid #333;
+    padding-bottom: 0;  
+  }
+
+  .about-text{
+    padding: 20px 20px 100px 20px;
+    text-align: center;
+    display: block;
+  }
+
   .footer-left{
     background-color: #FFE3E4;
     padding: 20px 0 20px 0;
@@ -411,15 +423,4 @@ article{
     display: block;
   }
 
-  .about-nav{
-    border-bottom: 1px solid #333;
-    padding-bottom: 0;
-    
-  }
-
-  .about-text{
-    padding: 20px 20px 100px 20px;
-    text-align: center;
-    display: block;
-  }
 }  
